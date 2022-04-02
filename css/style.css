@@ -89,3 +89,8 @@ li{
     background-color: rgb(188, 224, 253);
     box-shadow: 5px 5px  rgb(58, 58, 58);
 }
+
+.activo{
+    background-color: rgb(187, 212, 188);
+    color: black;
+}
