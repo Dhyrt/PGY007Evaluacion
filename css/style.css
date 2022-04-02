@@ -76,3 +76,16 @@ li{
     justify-content: center;
     margin: 2rem 0 3rem 0;
 }
+
+.card{
+    box-shadow: 3px 5px 15px rgb(58, 58, 58);
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+.banner{
+    background-color: rgb(188, 224, 253);
+    box-shadow: 5px 5px  rgb(58, 58, 58);
+}
