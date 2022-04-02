@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap" rel="stylesheet">
     <link rel="icon" href="img/icon.png">
     <link rel="stylesheet" href="css/style.css">
-    <title>Ayuda Animalitos</title>
+    <title>Tonari no Planta</title>
 </head>
 <body class="d-flex flex-column min-vh-100">
     <header>
@@ -46,16 +46,16 @@
                     </div>
                     <!--Foto de perfil-->
                     <div class="mt-3 d-flex justify-content-center avatar">
-                        <img src="img/userplant.png" class="dropdown-toggle" data-bs-toggle="dropdown">
-                        <ul class="dropdown-menu dropprofile">
-                            <li><a class="dropdown-item blanco" href="#">Perfil</a></li>
-                            <li><a class="dropdown-item blanco" href="listaDeseos.html">Lista de deseos</a></li>
-                            <li><a class="dropdown-item blanco activo" href="#">Fundacion</a></li>
-                            <li><a class="dropdown-item blanco" href="#">Configuración</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item blanco" href="index.html">Cerrar sesión</a></li>
-                          </ul>
-                    </div>
+                      <img src="img/userplant.png" class="dropdown-toggle" data-bs-toggle="dropdown">
+                      <ul class="dropdown-menu dropprofile">
+                          <li><a class="dropdown-item blanco" href="#">Perfil</a></li>
+                          <li><a class="dropdown-item blanco activo" href="#">Lista de deseos</a></li>
+                          <li><a class="dropdown-item blanco" href="fundacion.html">Fundacion</a></li>
+                          <li><a class="dropdown-item blanco" href="#">Configuración</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item blanco" href="index.html">Cerrar sesión</a></li>
+                        </ul>
+                  </div>
                 </div>
             </div>
         </div>
@@ -89,36 +89,69 @@
         </div>
     </header>
     <!--Cuerpo-->
-    <div class="container">
-        <div class="d-flex justify-content-center mt-5">
-            <img src="img/fundacion.png" width="100px">
-            <h1>Ayuda Animalitos</h1>
+    <div class="container-fluid mt-4">
+        <div>
+            <h1>Lista de deseados</h1>
         </div>
     </div>
-    <div class="container">
-        <div class="col-sm-2">
-        </div>
-        <div class="justify-content-center mt-5">
-            <p>Según una encuesta realizada por el Departamento Administrativo Nacional de Estadística, hubo un aumento en el número de mascotas en los hogares entre 2006 y 2017, pasando de 830.000 a más de dos millones, lo que significa un crecimiento de 60%</p>
-            <p>Sin embargo la tasa de abandonos también incrementa. De acuerdo con el mismo estudio, en el país hay cerca de un millón de animales en estado de abandono, cifra que no para de crecer.</p>
-            <p>Por esto se creo la Fundación Ayuda Animalitos, la cual es una fundación dedicada a ayudar a los animales callejeros, especialmente aquellos más necesitados. Nos encargamos de pagar tanto por sus gastos médicos como el costo de los alimentos. También tenemos un programa de adopción al cual ingresan después de estar completamente desparasitados y vacunados.</p>
-            <p>Al suscribirte a nuestra fundación no solo estarás recibiendo un 5% de descuento por el total de todas tus compras sino que también podrás ayudarnos a rescatar, rehabilitar, y dar hogar a miles de animales en situación de calle.</p>
-        </div>
-        <div class="col-sm-2">
-        </div>
-        <div class="d-flex justify-content-center">
-            <div class="mt-4 col-12 col-lg-auto mb-3 mb-lg-0">
-                <form action="/suscripcion" method="get">
-                  <div class="input-group">
-                    <label for="correoSusc" class="mx-4">Correo</label>
-                      <div class="form-outline">
-                          <input type="text" class="form-control" id="correoSusc" placeholder="PerGat@gmail.com">
+    <div class="container row mb-5 justify-content-center">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-9">
+            <div>
+                <div class="card mt-4" style="width: 900px;">
+                    <div class="row g-6">
+                      <div class="col-md-3">
+                        <img src="img/toto2.png" class="img-fluid" style="width: 240px;">
                       </div>
-                      <button type="submit" class="btn btn-success mb-5">Suscribirse</button>
+                      <div class="col-md-9 d-flex">
+                        <div class="card-body">
+                          <h3 class="card-title">Macetero Totoro y carreta</h3>
+                          <p class="card-text">Precio: $12.500</p>
+                          <p class="card-text"><small>Stock</small></p>
+                        </div>
+                        <div class="card-body mt-10">
+                            <button type="button" class="btn btn-info">Agregar al carrito</button>
+                            <p>asdasf</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </form>
+            </div>
+            <div>
+                <div class="card mb-3 mt-5" style="width: 900px;">
+                    <div class="row g-6">
+                      <div class="col-md-3">
+                        <img src="img/gloxi.png" class="img-fluid" style="width: 1000px; padding: 2px;">
+                      </div>
+                      <div class="col-md-9">
+                        <div class="card-body">
+                          <h3 class="card-title">Gloxinias</h3>
+                          <p class="card-text">Precio: $11.890</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div>
+                <div class="card mb-3 mt-5" style="width: 900px;">
+                    <div class="row g-6">
+                      <div class="col-md-3">
+                        <img src="img/adelfa.png" class="img-fluid" style="width: 249px; padding: 2px">
+                      </div>
+                      <div class="col-md-9">
+                        <div class="card-body">
+                          <h3 class="card-title">Arbsusto de Adelfa</h3>
+                          <p class="card-text">Precio: $10.990</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
         </div>
+        
+        <div class="col-sm-3"></div>
     </div>
     <footer class="bd-footer mt-auto py-3 bg-dark text-white text-center">
         <h6>Derechos reservados Tonari no Planta ©</h6>
