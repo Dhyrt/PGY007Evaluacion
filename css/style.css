@@ -39,13 +39,16 @@ li{
 
 .line{
     border-right: 1px solid black;
-    height: 30px;
+    height: 32px;
     margin-top: 8px;
+    margin: 6px 4px 0px 2px;
 }
 
 .avatar{ 
     width: 60px;
     height: 60px;
+    border-radius: 50%;
+    background-color: white;
 }
 
 .form-control{

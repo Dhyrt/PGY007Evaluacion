@@ -13,15 +13,14 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Tonari no Planta</title>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
     <header>
         <div class="px-2 py-1 bg-lightGreen">
             <!--Logo-->
             <div class="container-fluid">
                 <div class="justify-content-between d-flex">
                     <div class="d-flex mb-lg-0 me-lg-3">
-                        <a href="index.html"><img src="img/icon.png" width="100px"></a>
-                        <h1>Tonari no Planta</h1>
+                        <a href="index.html"><img src="img/logo.png" width="400px"></a>
                     </div>
                     <!--Barra de busqueda-->
                     <div class="d-flex justify-content-end mt-4">
@@ -47,7 +46,7 @@
                     </div>
                     <!--Foto de perfil-->
                     <div class="mt-3 d-flex justify-content-center avatar">
-                        <img src="img/user.png" class="dropdown-toggle" data-bs-toggle="dropdown">
+                        <img src="img/userplant.png" class="dropdown-toggle" data-bs-toggle="dropdown">
                         <ul class="dropdown-menu dropprofile">
                             <li><a class="dropdown-item blanco" href="#">Perfil</a></li>
                             <li><a class="dropdown-item blanco" href="#">Lista de deseos</a></li>
@@ -94,14 +93,35 @@
     </header>
     <!--Cuerpo-->
     <div class="container">
-        <form action="">
-            <label for="">a</label>
-            <input type="text">
-            <label for="">b</label>
-            <input type="text">
+      <div>
+        <h1>Registro</h1>
+      </div>
+      <div class="d-flex justify-content-center">
+        <form action="/registro" method="get" class="">
+          <div class="col-sm-6">
+            <div>
+              <label for="">a</label>
+              <input type="text" class="form-control">
+            </div>
+            <div>
+              <label for="">a</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+            <div class="col-sm-6">
+              <div>
+                <label for="">b</label>
+                <input type="text" class="form-control">
+              </div>
+              <div>
+                <label for="">b</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
         </form>
+      </div>
     </div>
-    <footer class="bd-footer fixed-bottom py-3 bg-dark text-white text-center">
+    <footer class="bd-footer mt-auto py-3 bg-dark text-white text-center">
         <h6>Derechos reservados Tonari no Planta ©</h6>
     </footer>
 </body>
