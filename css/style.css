@@ -39,9 +39,10 @@ li{
 
 .line{
     border-right: 1px solid black;
-    height: 32px;
+    height: 30px;
     margin-top: 8px;
     margin: 6px 4px 0px 2px;
+    padding: 0;
 }
 
 .avatar{ 
@@ -51,14 +52,33 @@ li{
     background-color: white;
 }
 
+@media(max-width:700px){
+    .avatar{ 
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: white;
+    }
+}
+
 .form-control{
     width: 20rem;
 }
 
 .dropbtn{
-    border-radius: 15px;
+    border-radius: 3px;
     background-color: rgb(52, 119, 55);
     color: white;
+}
+
+@media(max-width:700px){
+    .dropbtn{
+        width: 20px;
+        border-radius: 3px;
+        background-color: rgb(52, 119, 55);
+        color: white;
+        padding: 2px;
+    }
 }
 
 .dropprofile{
@@ -96,4 +116,23 @@ li{
 .activo{
     background-color: rgb(187, 212, 188);
     color: black;
+}
+
+.logo{
+    width: 400px;
+}
+@media(max-width:700px){
+    .logo{
+        width: 180px;
+    }
+}
+
+.m-p{
+    margin: 3rem 0 15px 30px ;
+}
+
+@media(max-width:700px){
+    .m-p{
+        margin: 1rem 0 1rem 12rem ;
+    }
 }

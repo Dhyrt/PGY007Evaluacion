@@ -14,88 +14,68 @@
     <title>Registro</title>
 </head>
 <body class="d-flex flex-column min-vh-100">
-    <header>
-        <div class="px-2 py-1 bg-lightGreen">
-            <!--Logo-->
-            <div class="container-fluid">
-                <div class="justify-content-between d-flex">
-                    <div class="d-flex mb-lg-0 me-lg-3">
-                        <a href="index.html"><img src="img/logo.png" width="400px"></a>
+  <header>
+    <div class="py-3 bg-lightGreen">
+        <div class="container-fluid d-grid gap-5 align-items-center" style="grid-template-columns: 3fr 3fr;">
+            <div>
+                <a href="index.html"><img src="img/logo.png" class="logo"></a>
+            </div>
+            <div class="d-flex align-items-center">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Búsqueda">
+                        <button class="btn dropdown-toggle dropbtn me-2" data-bs-toggle="dropdown" type="button"></button>
+                        <div class="input-group-prepend w-80 me-5">
+                            <img src="img/search.png" width="30px">
+                        </div>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Maceteros</a></li>
+                          <li><a class="dropdown-item" href="#">Tierra de hojas</a></li>
+                          <li><a class="dropdown-item" href="#">Flores</a></li>
+                          <li><a class="dropdown-item" href="#">Arbustos</a></li>
+                        </ul>
                     </div>
-                    <!--Barra de busqueda-->
-                    <div class="d-flex justify-content-end mt-4">
-                        <form action="/results" class="col-12 col-lg-auto mb-3 mb-lg-0">
-                            <div class="input-group col-12 col-lg-auto mb-3 mb-lg-0">
-                                <div class="form-outline">
-                                  <input type="search" class="form-control" placeholder="Búsqueda">
-                                </div>
-                                <!--Categorias-->
-                                <button type="button" class="dropdown-toggle dropbtn" data-bs-toggle="dropdown">
-                                  </button>
-                                <button type="button" class="btn btn-transparent">
-                                  <img src="img/search.png" width="20px">
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Maceteros</a></li>
-                                    <li><a class="dropdown-item" href="#">Tierra de hojas</a></li>
-                                    <li><a class="dropdown-item" href="#">Flores</a></li>
-                                    <li><a class="dropdown-item" href="#">Arbustos</a></li>
-                                  </ul>
-                            </div>
-                        </form>
-                    </div>
-                    <!--Foto de perfil-->
-                    <div class="mt-3 d-flex justify-content-center avatar">
-                        <img src="img/userplant.png">
-                    </div>
+                
+                <div class="d-flex justify-content-center avatar">
+                    <img src="img/userplant.png">
                 </div>
             </div>
         </div>
-        <div class="bg-darkGreen">
-            <div class="container-fluid d-flex flex-wrap align-items-center justify-content-between">
-                <!--Lado izquierdo navbar-->
-                <nav class="navbar navbar-expand-sm">
-                    <div class="container-fluid">
-                      <ul class="navbar-nav">
-                        <li class="nav-item">
-                          <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#Alerta"><img src="img/track.png" width="30px">Rastrear pedido</a>
-                        </li>
-                        <span class="line"></span>
-                       <li class="nav-item">
-                          <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#Alerta"><img src="img/shopcart.png" width="30px">Compras</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </nav>
-                  <!--Lado derecho navbar-->
-                  <nav class="navbar navbar-expand-sm">
-                    <div class="container-fluid">
-                        <ul class="navbar-nav">
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Iniciar sesión</a>
-                          </li>
-                          <span class="line"></span>
-                         <li class="nav-item">
-                            <a class="nav-link" href="registro.html">Registrarse</a>
-                          </li>
-                        </ul>
-                      </div>
-                  </nav>
-            </div>
-        </div>
-    </header>
+    </div>
 
-    <!-- The Modal -->
-    <div class="modal" id="Alerta">
-      <div class="modal-dialog">
-        <div class="alert">
-          <div class="alert alert-info alert-dismissible text-center">
-            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-            <h5>Necesita <strong>Iniciar sesion</strong> para utilizar esta sesión</h5>
-          </div>
+</header>
+<nav class="py-2 bg-darkGreen">
+    <div class="container-fluid d-flex flex-wrap">
+        <ul class="nav me-auto">
+            <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#Alerta"><img src="img/track.png" width="30px">Rastrear pedido</a>
+            </li>
+            <span class="line"></span>
+            <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#Alerta"><img src="img/shopcart.png" width="30px">Compras</a>
+            </li>
+        </ul>
+        <ul class="nav">
+            <li class="nav-item">
+            <a class="nav-link" href="#">Iniciar sesión</a>
+            </li>
+            <span class="line"></span>
+            <li class="nav-item">
+            <a class="nav-link" href="registro.html">Registrarse</a>
+            </li>
+        </ul>
+</nav>   
+
+  <!-- The Modal -->
+  <div class="modal" id="Alerta">
+    <div class="modal-dialog">
+      <div class="alert">
+        <div class="alert alert-info alert-dismissible text-center">
+          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+          <h5>Necesita <strong>Iniciar sesion</strong> para utilizar esta sesión</h5>
         </div>
       </div>
     </div>
+  </div>
 
     <!--Cuerpo-->
     <div class="container-fluid mt-3 mb-3">
@@ -106,46 +86,66 @@
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-sm-8 px-6">
-          <form action="Index2.html" method="get" class="row g-6 justify-content-evenly">
-              <div class="col-sm-6">
-                <label for="txtNombre" class="form-label">Nombre</label>
-                <input type="text" id="txtNombre" class="form-control" placeholder="Lycoris">
-              </div>
-              <div class="col-sm-6">
-                <label for="txtApellido" class="form-label">Apellidos</label>
-                <input type="text" id="txtApellido" class="form-control" placeholder="Radiata">
-              </div>
-              
-              <div class="col-sm-6">
-                <label for="txtTelefono" class="form-label">Telefono</label>
-                <input type="text" id="txtTelefono" class="form-control" placeholder="+56 9 4586xxxx">
-              </div>
-              <div class="col-sm-6">
-                <label for="txtPais" class="form-label">País</label>
-                <input type="text" id="txtPais" class="form-control" placeholder="Chile">
-              </div>
-
-              <div class="col-sm-6">
-                <label for="txtComuna" class="form-label">Comuna</label>
-                <input type="text" id="txtComuna" class="form-control" placeholder="Puente Alto">
-              </div>
-              <div class="col-sm-6">
-                <label for="txtDireccion" class="form-label">Direccion</label>
-                <input type="text" id="txtDireccion" class="form-control" placeholder="Laguna xxxx">
-              </div>
-
-              <div class="col-sm-6">
-                <label for="txtCorreo" class="form-label">Correo</label>
-                <input type="text" id="txtCorreo" class="form-control" placeholder="TonariNo.Planta@gmail.com">
-              </div>
-              <div class="col-sm-6 mb-3">
-                <label for="txtPass" class="form-label">Contraseña</label>
-                <input type="password" id="txtPass" class="form-control" placeholder="BfDs_3a9h*50">
-              </div>
-
-              <div>
-                <button type="submit" class="btn btn-success mb-5">Registrarse</button>
-              </div>
+          <form action="Index2.html" method="get">
+            <div class="container">
+              <div class="row g-2 mb-3">
+                  <div class="col-md">
+                    <div class="form">
+                      <label for="txtNombre" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="txtNombre" placeholder="Lycoris">
+                    </div>
+                  </div>
+                  <div class="col-md">
+                      <div class="form">
+                      <label for="txtApellido" class="form-label">Apellidos</label>
+                        <input type="text" class="form-control" id="txtApellido" placeholder="Radiata">
+                      </div>
+                    </div>
+                </div>
+                <div class="row g-2 mb-3">
+                  <div class="col-md">
+                    <div class="form">
+                      <label for="txtTelefono" class="form-label">Telefono</label>
+                      <input type="tel" class="form-control" id="txtTelefono" placeholder="+56 9 4586xxxx">
+                    </div>
+                  </div>
+                  <div class="col-md">
+                      <div class="form">
+                        <label for="txtPais" class="form-label">País</label>
+                        <input type="text" class="form-control" id="txtPais" placeholder="Chile">
+                      </div>
+                    </div>
+                </div>
+                <div class="row g-2 mb-3">
+                  <div class="col-md">
+                    <div class="form">
+                      <label for="txtComuna" class="form-label">Comuna</label>
+                      <input type="text" class="form-control" id="txtComuna" placeholder="Puente Alto">
+                    </div>
+                  </div>
+                  <div class="col-md">
+                      <div class="form">
+                        <label for="txtDireccion" class="form-label">Direccion</label>
+                        <input type="text" class="form-control" id="txtDireccion" placeholder="Laguna xxxx">
+                      </div>
+                    </div>
+                </div>
+                <div class="row g-2 mb-3">
+                  <div class="col-md">
+                    <div class="form">
+                      <label for="txtCorreo" class="form-label">Correo</label>
+                      <input type="email" class="form-control" id="txtCorreo" placeholder="TonariNo.Planta@gmail.com">
+                    </div>
+                  </div>
+                  <div class="col-md">
+                      <div class="form">
+                        <label for="txtPass" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="txtPass" placeholder="BfDs_3a9h*50">
+                      </div>
+                    </div>
+                </div>
+                <button class="btn btn-success mb-3">registrarse</button>
+          </div>
           </form>
         </div>
       </div>
