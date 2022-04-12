@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap" rel="stylesheet">
     <link rel="icon" href="img/icon.png">
     <link rel="stylesheet" href="css/style.css">
-    <title>Ayuda Animalitos</title>
+    <title>Perfil</title>
 </head>
 <body class="d-flex flex-column min-vh-100">
   <header>
@@ -71,35 +71,83 @@
             </li>
         </ul>
 </nav>
+
+    <!-- The Modal -->
+<div class="modal" id="resena">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Escribir Reseña</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+            <form class="text-center" action="" method="get">
+                <div class="mb-3">
+                    <textarea class="form-control" placeholder="¿Que opinas sobre producto?" style="height: 300px; width: 465px;"></textarea>
+                  </div>
+                <button type="submit" class="btn btn-success">Publicar</button>
+                <button type="reset" class="btn btn-danger">Limpiar</button>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
     <!--Cuerpo-->
-    <div class="container">
-        <div class="d-flex justify-content-center mt-5">
-            <img src="img/fundacion.png" width="100px">
-            <h1>Ayuda Animalitos</h1>
+    <div class="container-fluid mt-3">
+        <h1>Perfil</h1>
+    </div>
+    <div class="container mt-3 mb-5">
+        <div class="row justify-content-center">
+            <div class="card long-card">
+                <div class="row g-0">
+                  <div class="col-md-3 py-2 mt-3">
+                    <img src="img/userplant.png" class="img-fluid profile" width="200px">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Informacion Personal</h5>
+                      <h6>Nombre de Usuario</h6>
+                      <p class="card-text"><small>País: Chile</small></p>
+                      <hr>
+                      <h5>Informacion de contacto</h5>
+                      <p class="card-text">Correo:  Y8H.90hm@gmail.com</p>
+                      <p class="card-text"><small> Telefono: +56 9 4586xxxx</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
     </div>
-    <div class="container">
-        <div class="col-sm-2">
-        </div>
-        <div class="justify-content-center mt-5">
-            <p>Según una encuesta realizada por el Departamento Administrativo Nacional de Estadística, hubo un aumento en el número de mascotas en los hogares entre 2006 y 2017, pasando de 830.000 a más de dos millones, lo que significa un crecimiento de 60%</p>
-            <p>Sin embargo la tasa de abandonos también incrementa. De acuerdo con el mismo estudio, en el país hay cerca de un millón de animales en estado de abandono, cifra que no para de crecer.</p>
-            <p>Por esto se creo la Fundación Ayuda Animalitos, la cual es una fundación dedicada a ayudar a los animales callejeros, especialmente aquellos más necesitados. Nos encargamos de pagar tanto por sus gastos médicos como el costo de los alimentos. También tenemos un programa de adopción al cual ingresan después de estar completamente desparasitados y vacunados.</p>
-            <p>Al suscribirte a nuestra fundación no solo estarás recibiendo un 5% de descuento por el total de todas tus compras sino que también podrás ayudarnos a rescatar, rehabilitar, y dar hogar a miles de animales en situación de calle.</p>
-        </div>
-        <div class="col-sm-2">
-        </div>
-        <div class="d-flex justify-content-center">
-            <div class="mt-4 col-12 col-lg-auto mb-3 mb-lg-0">
-                <form action="/suscripcion" method="get">
-                  <div class="input-group">
-                    <label for="correoSusc" class="mx-4">Correo</label>
-                      <div class="form-outline">
-                          <input type="text" class="form-control" id="correoSusc" placeholder="PerGat@gmail.com">
-                      </div>
-                      <button type="submit" class="btn btn-success mb-5">Suscribirse</button>
+    <div class="container-fluid mt-3 mb-3">
+      <h3>Compras Recientes</h3>
+    </div>
+    <div class="container mb-5">
+        <div class="row justify-content-center">
+            <p>Fecha: 24 de Marzo de 2022 </p>
+            <div class="card mb-3 long-card">
+              <div class="row g-0">
+                <div class="col-md-3 py-2">
+                  <img src="img/totoro.jpg" class="img-fluid" width="200px">
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h4 class="card-title">Macetero Modelo Totoro</h4>
+                    <p class="card-text">Precio: $15.900</p>
+                    <p class="card-text"><small>Cantidad: 2</small></p>
                   </div>
-                </form>
+                </div>
+                <div class="container-fluid col-md-3">
+                  <div class="card-body m-p">
+                    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#resena">Escribir Reseña</button>
+                  </div>
+                </div>
+              </div>
             </div>
         </div>
     </div>

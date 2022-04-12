@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <title>Tonari no Planta</title>
+</head>
+<body>
+    <header>
+        <div class="py-3 bg-lightGreen">
+            <div class="container-fluid d-grid gap-5 align-items-center" style="grid-template-columns: 3fr 3fr;">
+                <div>
+                    <a href="Index2.html"><img src="img/logo.png" class="logo"></a>
+                </div>
+                <div class="d-flex align-items-center">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Búsqueda">
+                            <button class="btn dropdown-toggle dropbtn me-2" data-bs-toggle="dropdown" type="button"></button>
+                            <div class="input-group-prepend w-80 me-5">
+                                <img src="img/search.png" width="30px">
+                            </div>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Maceteros</a></li>
+                              <li><a class="dropdown-item" href="#">Tierra de hojas</a></li>
+                              <li><a class="dropdown-item" href="#">Flores</a></li>
+                              <li><a class="dropdown-item" href="#">Arbustos</a></li>
+                            </ul>
+                        </div>
+                    
+                    <div class="d-flex justify-content-center avatar">
+                        <img src="img/userplant.png" class="dropdown-toggle" data-bs-toggle="dropdown">
+                        <ul class="dropdown-menu dropprofile">
+                          <li><a class="dropdown-item blanco" href="perfil.html">Perfil</a></li>
+                          <li><a class="dropdown-item blanco" href="listaDeseos.html">Lista de deseos</a></li>
+                          <li><a class="dropdown-item blanco" href="fundacion.html">Fundacion</a></li>
+                          <li><a class="dropdown-item blanco" href="#">Configuración</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item blanco" href="index.html">Cerrar sesión</a></li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="py-2 bg-darkGreen">
+        <div class="container-fluid d-flex flex-wrap">
+            <ul class="nav me-auto">
+                <li class="nav-item">
+                <a class="nav-link" href="rastreo.html"><img src="img/track.png" width="30px">Mis pedidos</a>
+                </li>
+                <span class="line"></span>
+                <li class="nav-item">
+                <a class="nav-link" href="compras.html"><img src="img/shopcart.png" width="30px">Compras</a>
+                </li>
+            </ul>
+            <ul class="nav">
+                <li class="nav-item">
+                <a class="nav-link" href="perfil.html">Bienvenido</a>
+                </li>
+                <span class="line"></span>
+                <li class="nav-item">
+                <a class="nav-link" href="ayuda.html"><img src="img/help.png" width="30px">Ayuda</a>
+                </li>
+            </ul>
+    </nav>
+<!----------------------------------------------------------------------------------------------------------------------------->
+    <div class="container row justify-content-center">
+        <div class="col-sm-10 mt-5">
+            <h2>Rastrea tu Pedido</h2>
+            <hr>
+            <div class="form-group">
+              <label for="usr">Ingresa el Codigo de tu compra:</label>
+              <input type="text" class="form-control" id="usr"><br>
+              <button type="button" class="btn btn-dark" >Buscar</button>
+            </div> 
+        </div>
+<!----------------------------------------------------------------------------------------------------------------------------->
+        <div class="container px-1 px-md-4 py-5 mx-auto">
+          <div class="row justify-content-center">
+            <div class="card">
+                <div class="justify-content-between px-3 top">
+                    <div class="d-flex">
+                        <h5>ORDEN <span class="text-primary font-weight-bold">#Y34XDHR</span></h5>
+                    </div>
+                    <div class="d-flex flex-column text-sm-right">
+                        <p class="mb-0">Entrega Esperada <span>01/12/22</span></p>
+                        <p>USPS <span class="font-weight-bold">42422898</span></p>
+                    </div>
+                </div> <!-- Add class 'active' to progress -->
+                <div class="d-flex">
+                    <div class="col-12">
+                      <div class="progress">
+                          <div class="progress-bar" style="width:70%"></div>
+                        </div>
+                        <ul id="progressbar" class="text-center">
+                            <li class="active step0"></li>
+                            <li class="active step0"></li>
+                            <li class="active step0"></li>
+                            <li class="step0"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-flex text-center justify-content-center align-items-baseline top">
+                    <div class="d-flex icon-content"> <img class="icon" src="img/order.png">
+                        <div class="d-flex flex-column">
+                            <p class="font-weight-bold"><br>Procesando</p>
+                        </div>
+                    </div>
+                    <div class="d-flex icon-content"> <img class="icon" src="img/order2.png">
+                        <div class="d-flex flex-column">
+                            <p class="font-weight-bold"><br>Preparando</p>
+                        </div>
+                    </div>
+                    <div class="d-flex icon-content"> <img class="icon" src="img/order3.png">
+                        <div class="d-flex flex-column">
+                            <p class="font-weight-bold"><br>En Camino</p>
+                        </div>
+                    </div>
+                    <div class="d-flex icon-content"> <img class="icon" src="img/order4.png">
+                        <div class="d-flex flex-column">
+                            <p class="font-weight-bold"><br>Entregado</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </div>
+<!----------------------------------------------------------------------------------------------------------------------------->        
+        <div class="col-sm-3"></div>
+        <div class="container col-sm-8 card-cont">
+            
+
+            
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+    <footer class="bd-footer mt-auto py-3 bg-dark text-white text-center">
+        <h6>Derechos reservados Tonari no Planta ©</h6>
+    </footer>
+</body>
+</html>
