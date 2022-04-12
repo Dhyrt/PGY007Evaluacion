@@ -27,7 +27,7 @@
                         <div class="input-group-prepend w-80 me-5">
                             <img src="img/search.png" width="30px">
                         </div>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu" data-bs-toggle="modal" data-bs-target="#Alerta">
                           <li><a class="dropdown-item" href="#">Maceteros</a></li>
                           <li><a class="dropdown-item" href="#">Tierra de hojas</a></li>
                           <li><a class="dropdown-item" href="#">Flores</a></li>
@@ -56,7 +56,7 @@
         </ul>
         <ul class="nav">
             <li class="nav-item">
-            <a class="nav-link" href="#">Iniciar sesión</a>
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#iniciarsesion">Iniciar sesión</a>
             </li>
             <span class="line"></span>
             <li class="nav-item">
@@ -64,6 +64,72 @@
             </li>
         </ul>
 </nav>   
+
+<!--Modal-->
+<div class="modal fade" id="iniciarsesion">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: rgb(255, 225, 190);">
+        <h5 class="modal-title">Iniciar Sesión</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="background-color: rgb(255, 245, 234); text-align: center;">
+        <div>
+          <label for="">Ingrese su nombre de usuario / Correo electronico</label>
+        </div>
+        <div>
+          <input type="text" style="margin-top: 5px;">
+        </div>
+        <div>
+          <label for="" style="margin-top: 15px;">Ingrese su contraseña</label>
+        </div>
+        <div>
+          <input type="password" style="margin-top: 5px; margin-bottom: 15px;">
+        </div>
+        <div>
+          <a href="#" data-bs-target="#olvidecontraseña" data-bs-toggle="modal" data-bs-dismiss="modal">Olvide mi contraseña</a>
+        </div>
+        <div>
+          <a href="Index2.html"><button class="btn btn-primary mt-3" data-bs-dismiss="modal">Iniciar Sesión</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="olvidecontraseña">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: rgb(255, 225, 190);">
+        <h5 class="modal-title">Restaurar contraseña</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="background-color: rgb(255, 245, 234); text-align: center;">
+        <div>
+          <label for="">Ingrese su correo electronico</label> 
+        </div>
+        <div>
+            <input type="text" style="margin-top: 10px; margin-bottom: 25px; height: 40px;">
+            <button class="btn btn-primary" data-bs-target="#recuperar" data-bs-toggle="modal" data-bs-dismiss="modal" style="height: 40px; margin-bottom: 5px;">Enviar Instrucciones</button>
+          </div>
+          <div>
+            <button class="btn btn-primary mt-3" data-bs-target="#iniciarsesion" data-bs-toggle="modal" data-bs-dismiss="modal">Volver a Inicio Sesión</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="recuperar">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body" style="background-color: rgb(255, 245, 234); text-align: center;">
+        <h4>Se envio un email a su correo electronico con instrucciones para recuperar su contraseña</h4>
+        <button class="btn btn-primary mt-3" data-bs-target="#iniciarsesion" data-bs-toggle="modal" data-bs-dismiss="modal">Volver a Inicio Sesión</button>
+      </div>
+    </div>
+  </div>
+</div>
 
   <!-- The Modal -->
   <div class="modal" id="Alerta">
