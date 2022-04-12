@@ -11,11 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap" rel="stylesheet">
     <link rel="icon" href="img/icon.png">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-    <title>Tonari no Planta</title>
+    <title>Mis pedidos</title>
 </head>
 <body>
     <header>
@@ -77,74 +73,60 @@
     </nav>
 <!----------------------------------------------------------------------------------------------------------------------------->
     <div class="container row justify-content-center">
-        <div class="col-sm-10 mt-5">
+        <div class="col-sm-10 mt-5 mb-5">
             <h2>Rastrea tu Pedido</h2>
             <hr>
             <div class="form-group">
               <label for="usr">Ingresa el Codigo de tu compra:</label>
-              <input type="text" class="form-control" id="usr"><br>
+              <input type="text" class="form-control" value="Y34XDHR" id="usr"><br>
               <button type="button" class="btn btn-dark" >Buscar</button>
             </div> 
         </div>
 <!----------------------------------------------------------------------------------------------------------------------------->
-        <div class="container px-1 px-md-4 py-5 mx-auto">
-          <div class="row justify-content-center">
-            <div class="card">
-                <div class="justify-content-between px-3 top">
-                    <div class="d-flex">
-                        <h5>ORDEN <span class="text-primary font-weight-bold">#Y34XDHR</span></h5>
-                    </div>
-                    <div class="d-flex flex-column text-sm-right">
-                        <p class="mb-0">Entrega Esperada <span>01/12/22</span></p>
-                        <p>USPS <span class="font-weight-bold">42422898</span></p>
-                    </div>
-                </div> <!-- Add class 'active' to progress -->
-                <div class="d-flex">
-                    <div class="col-12">
-                      <div class="progress">
-                          <div class="progress-bar" style="width:70%"></div>
-                        </div>
-                        <ul id="progressbar" class="text-center">
-                            <li class="active step0"></li>
-                            <li class="active step0"></li>
-                            <li class="active step0"></li>
-                            <li class="step0"></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="d-flex text-center justify-content-center align-items-baseline top">
-                    <div class="d-flex icon-content"> <img class="icon" src="img/order.png">
-                        <div class="d-flex flex-column">
-                            <p class="font-weight-bold"><br>Procesando</p>
-                        </div>
-                    </div>
-                    <div class="d-flex icon-content"> <img class="icon" src="img/order2.png">
-                        <div class="d-flex flex-column">
-                            <p class="font-weight-bold"><br>Preparando</p>
-                        </div>
-                    </div>
-                    <div class="d-flex icon-content"> <img class="icon" src="img/order3.png">
-                        <div class="d-flex flex-column">
-                            <p class="font-weight-bold"><br>En Camino</p>
-                        </div>
-                    </div>
-                    <div class="d-flex icon-content"> <img class="icon" src="img/order4.png">
-                        <div class="d-flex flex-column">
-                            <p class="font-weight-bold"><br>Entregado</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row justify-content-center">
+          <div class="card grid-0">
+              <div class="d-flex justify-content-between px-3 top">
+                  <div>
+                      <h5>ORDEN <span class="text-primary font-weight-bold">#Y34XDHR</span></h5>
+                  </div>
+                  <div class="text-sm-right">
+                      <p class="mb-0">Entrega Esperada <span>01/12/22</span></p>
+                      <p>USPS <span class="font-weight-bold">42422898</span></p>
+                  </div>
+              </div> <!-- Add class 'active' to progress -->
+              <div class="d-flex">
+                  <div class="col-12">
+                    <div class="progress">
+                        <div class="progress-bar" style="width:70%"></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="container-fluid">
+                  <div class="row justify-content-evenly">
+                      <div class="d-flex justify-content-between align-items-baseline top">
+                          <div class="icon-content"> 
+                              <img class="icon" src="img/order.png">
+                              <p class="font-weight-bold"><br>Procesando</p>
+                          </div>
+                          <div class="icon-content"> 
+                              <img class="icon" src="img/order2.png">
+                              <p class="font-weight-bold"><br>Preparando</p>
+                          </div>
+                          <div class="icon-content"> 
+                              <img class="icon" src="img/order3.png">
+                              <p class="font-weight-bold"><br>En Camino</p>
+                          </div>
+                          <div class="icon-content"> 
+                              <img class="icon" src="img/order4.png">
+                              <p class="font-weight-bold"><br>Entregado</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
           </div>
-      </div>
-<!----------------------------------------------------------------------------------------------------------------------------->        
-        <div class="col-sm-3"></div>
-        <div class="container col-sm-8 card-cont">
-            
-
-            
         </div>
-        <div class="col-sm-3"></div>
     </div>
     <footer class="bd-footer mt-auto py-3 bg-dark text-white text-center">
         <h6>Derechos reservados Tonari no Planta ©</h6>
